@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<!--<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Quiz Level</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Easy</h6>
+                    @Html.ActionLink("Start Quiz", "EasyQuiz", new { @class = "card-link" }, new { @id = "EasyQuiz" })
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Quiz Level</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Medium</h6>
+                    @Html.ActionLink("Start Quiz", "MediumQuiz", new { @class = "card-link" }, new { @id = "MediumQuiz" })
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Quiz Level</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Hard</h6>
+                    @Html.ActionLink("Start Quiz", "HardQuiz", new { @class = "card-link" }, new { @id = "HardQuiz" })
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
